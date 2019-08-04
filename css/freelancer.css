@@ -10874,3 +10874,13 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #1a252f;
 }
+
+.box-shrink {
+	flex: 1 1 auto; height: 32px; margin: 4px;
+	border: 2px solid #00f;
+}
+
+video {
+	max-height: 100%; max-width: 100%;
+	display: block; margin: 0px auto; border: 2px solid #f00;
+}
