@@ -186,12 +186,19 @@
 
       <!-- About Section Content -->
       <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">I've been playing games for as long as I can remember and they've always inspired me during the most pivotal times in life. As I grew up, I realised that more and more people felt the same way about games that I did. This feeling is the reason for the bond I share with many of my closest friends. This bond has filled me with passion and an overwhelming urge to contribute to the industry.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">That feeling that people get when they achieve something within a game and the feeling of sharing that accomplishment and excitement with others. I believe that everyone deserves to feel that way and being in games development is the best way for me to give back to the industry to which I owe so much.</p>
-        </div>
+          <p class="lead">
+		   I am a recent alumni of the University of Gloucestershire, and spent most of my life living in a tiny village in Cambridgeshire.
+		  </p>
+          <p class="lead">
+			I've been playing games for as long as I can remember and they've always inspired me during the most pivotal times in life. 
+			My time at university taught me a wide variety of skills, the most important ones being planning and time-keeping, and the ability to self learn. 
+			I have always had a passion for logical thinking and I enjoy problem solving, no matter how difficult the task.
+		  </p>
+		  <p class="lead">
+		  When I'm not sat at a computer, I love getting outside. Be it running, meeting with friends or playing Pokemon Go. 
+		  When I was younger, I had the pleasure of working on an ice rink as a marshal (kind of like a life guard but the water is frozen).
+		  Since then I've adored ice skating, and will find any excuse to go when the time allows for it. 
+		  </p>
       </div>
 
       <!-- About Section Button
@@ -357,7 +364,8 @@
 					<!-- Portfolio Modal - Image 3 -->
 					<img class="img-fluid rounded mb-5" src="img/portfolio/drift3.png" alt="">
 				</div>
-	
+				
+				<div class="Row">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">
 				Codename: Driftpacito is an addictive mobile game made in Unity that was based around the idea that the only input the player has is touch. 
@@ -371,16 +379,16 @@
 				These abilities include slowing the game down whilst keeping the score multiplier; increasing the score multiplier and an overshield which 
 				stops the player from losing should they collide with a piece of debris.
 				</p>
+				</div>
 				
 				<div class="Row">
 				<video controls>
 					<source src="img/portfolio/resizeDriftV.mp4" type="video/mp4">
 				</video>
-				</div>
-				
 				<p class="mb-5">
 				A beta version of this game is available to play on Android. If you'd like to give it a shot, then get in touch below :).
 				</p>
+				</div>
 				
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
@@ -420,17 +428,37 @@
 				<!-- Images of high level -->
 				</div class="Row">
 					<!-- Portfolio Modal - Image 1-->
+					<p class="mb-5"> 
+					A university project in which we were tasked to create a component system based AI with flocking behaviours, which include allignment, separation and cohesion.
+					</p>
 					<img class="img-fluid rounded mb-5" src="img/portfolio/HIgh-level1.png" alt="">
+					<p class="mb-5"> 
+					These three individual behaviours, along with a wander multiplier, can be altered in real-time using ImGui. 
+					ImGui also allows the user to add more entities, known as Pinkies and Imps (yes, the enemies from Doom).
+					</p>
 					<!-- Portfolio Modal - Image 2-->
 					<img class="img-fluid rounded mb-5" src="img/portfolio/HIgh-level2.png" alt="">
-					<!-- Portfolio Modal - Image 3-->
-					<img class="img-fluid rounded mb-5" src="img/portfolio/HIgh-level3.png" alt="">
+					<p class="mb-5"> 
+					The respective Pinkies and Imps use Axis Aligned Bounding Boxes (AABB) to avoid the walls around the square in which they can walk. 
+					They use this same collision detection to avoid a box that can be placed randomly in the scene by the user using ImGui.
+					</p>
 					<!-- Portfolio Modal - Image 3-->
 					<img class="img-fluid rounded mb-5" src="img/portfolio/HIgh-level4.png" alt="">
-					<!-- Portfolio Modal - Image 3-->
+					<p class="mb-5"> 
+					The entities don't collide with eachother, which means that they will all merge together when allignment and cohesion are 
+					turned all the way up and the separation value is near zero.
+					</p>
+					<!-- Portfolio Modal - Image 4-->
+					<img class="img-fluid rounded mb-5" src="img/portfolio/HIgh-level3.png" alt="">
+					<p class="mb-5"> 
+					The entities choose which direction to wander in by choosing a random poin on a circle in front of them and drawing a line from the center to this point. 
+					This can be seen here.
+					</p>
+					<!-- Portfolio Modal - Image 5-->
 					<img class="img-fluid rounded mb-5" src="img/portfolio/HIgh-level5.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"> </p>
+					<p class="mb-5"> 
+					This project was made within a framework given to us by the University, meaning we didn't have to start from scratch.
+					</p>
 				</div>
 
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
@@ -459,7 +487,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Shaders</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">GLSL Shaders with C++</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -469,19 +497,36 @@
                   <div class="divider-custom-line"></div>
                 </div>
 				<div class="Row">
+					<p class="mb-5"> 
+					One of the final assignments that was given at university was to implement different shaders in a scene that was given to us.
+					The initial scene contained one directional light using the Phong lighting model.
+					</p>
 					<!-- Portfolio Modal - Image 1 -->
 					<img class="img-fluid rounded mb-5" src="img/portfolio/shaders1.png" alt="">
-					<!-- Portfolio Modal - Image 1 -->
-					<img class="img-fluid rounded mb-5" src="img/portfolio/shaders2.png" alt="">
+					<p class="mb-5"> 
+					The first task was to add shadows to the scene based off this directional light and then implement PFC and Stratified Poisson Sampling to eliminate shadow acne.
+					</p>
 					<!-- Portfolio Modal - Image 1 -->
 					<img class="img-fluid rounded mb-5" src="img/portfolio/shaders3.png" alt="">
+					<p class="mb-5">
+					</p>
+					<!-- Portfolio Modal - Image 1 -->
+					<img class="img-fluid rounded mb-5" src="img/portfolio/shaders2.png" alt="">
+					<p class="mb-5">
+					The next task was to add two more lights: a point light and a spotlight.
+					</p>
 					<!-- Portfolio Modal - Image 1 -->
 					<img class="img-fluid rounded mb-5" src="img/portfolio/shaders4.png" alt="">
+					<p class="mb-5">
+					The spotlight has an adjustable inner and outer cone, which can be used to give the edge of the light different amounts of softness. 
+					</p>
 					<!-- Portfolio Modal - Image 1 -->
 					<img class="img-fluid rounded mb-5" src="img/portfolio/shaders5.png" alt="">
+					<p class="mb-5">
+					All of the different values of each light, including RGB values, are adjustable in real-time using ImGui.
+					</p>
 					<!-- Portfolio Modal - Image 1 -->
 					<img class="img-fluid rounded mb-5" src="img/portfolio/shaders6.png" alt="">
-					<!-- Portfolio Modal - Text -->
 					<p class="mb-5"> </p>
 				</div>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
